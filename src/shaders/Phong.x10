@@ -11,6 +11,11 @@ public class Phong extends Material {
 		this.ambient = amb;
 	}
 	
+	public def this(color:Color) {
+		this.color = color;
+		this.ambient = Raytracer.AMBIENT_LIGHT;
+	}
+	
 	public def evaluate(
 			me:Intersectable,
 			ray:Ray, 

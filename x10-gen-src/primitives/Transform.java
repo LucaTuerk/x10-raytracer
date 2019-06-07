@@ -49,6 +49,66 @@ public class Transform extends x10.core.Ref implements x10.serialization.X10Java
     public primitives.Vector rot;
     
     
+    //#line 7 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Transform.x10"
+    public double getPosComponent$O(final long d) {
+        
+        //#line 8 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Transform.x10"
+        final int t$99545 = ((int)(long)(((long)(d))));
+        
+        //#line 8 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Transform.x10"
+        switch (t$99545) {
+            
+            //#line 9 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Transform.x10"
+            case 0:
+                
+                //#line 9 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Transform.x10"
+                final primitives.Vector t$99537 = ((primitives.Vector)(this.pos));
+                
+                //#line 9 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Transform.x10"
+                final double t$99538 = t$99537.x;
+                
+                //#line 9 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Transform.x10"
+                return t$99538;
+            
+            //#line 10 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Transform.x10"
+            case 1:
+                
+                //#line 10 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Transform.x10"
+                final primitives.Vector t$99539 = ((primitives.Vector)(this.pos));
+                
+                //#line 10 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Transform.x10"
+                final double t$99540 = t$99539.y;
+                
+                //#line 10 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Transform.x10"
+                return t$99540;
+            
+            //#line 11 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Transform.x10"
+            case 2:
+                
+                //#line 11 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Transform.x10"
+                final primitives.Vector t$99541 = ((primitives.Vector)(this.pos));
+                
+                //#line 11 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Transform.x10"
+                final double t$99542 = t$99541.z;
+                
+                //#line 11 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Transform.x10"
+                return t$99542;
+            
+            //#line 12 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Transform.x10"
+            default:
+                
+                //#line 12 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Transform.x10"
+                final long t$99543 = ((d) % (((long)(3L))));
+                
+                //#line 12 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Transform.x10"
+                final double t$99544 = this.getPosComponent$O((long)(t$99543));
+                
+                //#line 12 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Transform.x10"
+                return t$99544;
+        }
+    }
+    
+    
     //#line 3 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Transform.x10"
     final public primitives.Transform primitives$Transform$$this$primitives$Transform() {
         

@@ -3,7 +3,6 @@ import shaders.*;
 
 
 public class Sphere extends Intersectable{
-	public var rad:Double;
 	
 	public def this(pos:Vector, rad:Double, mat:Material) {
 		this.pos = pos;

@@ -58,23 +58,23 @@ public class MinBuffer extends x10.core.Ref implements x10.serialization.X10Java
     public void insert(final long ind, final double valu) {
         
         //#line 9 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/datastructures/MinBuffer.x10"
-        final double t$6285 = this.value;
+        final double t$6743 = this.value;
         
         //#line 9 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/datastructures/MinBuffer.x10"
-        boolean t$6286 = ((valu) < (((double)(t$6285))));
+        boolean t$6744 = ((valu) < (((double)(t$6743))));
         
         //#line 9 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/datastructures/MinBuffer.x10"
-        if (t$6286) {
+        if (t$6744) {
             
             //#line 9 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/datastructures/MinBuffer.x10"
-            t$6286 = ((valu) >= (((double)(0.0))));
+            t$6744 = ((valu) >= (((double)(0.0))));
         }
         
         //#line 9 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/datastructures/MinBuffer.x10"
-        final boolean t$6287 = t$6286;
+        final boolean t$6745 = t$6744;
         
         //#line 9 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/datastructures/MinBuffer.x10"
-        if (t$6287) {
+        if (t$6745) {
             
             //#line 10 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/datastructures/MinBuffer.x10"
             this.init = true;
@@ -92,13 +92,13 @@ public class MinBuffer extends x10.core.Ref implements x10.serialization.X10Java
     public boolean isEmpty$O() {
         
         //#line 17 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/datastructures/MinBuffer.x10"
-        final boolean t$6288 = this.init;
+        final boolean t$6746 = this.init;
         
         //#line 17 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/datastructures/MinBuffer.x10"
-        final boolean t$6289 = !(t$6288);
+        final boolean t$6747 = !(t$6746);
         
         //#line 17 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/datastructures/MinBuffer.x10"
-        return t$6289;
+        return t$6747;
     }
     
     
@@ -106,10 +106,10 @@ public class MinBuffer extends x10.core.Ref implements x10.serialization.X10Java
     public long getIndex$O() {
         
         //#line 21 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/datastructures/MinBuffer.x10"
-        final long t$6290 = this.index;
+        final long t$6748 = this.index;
         
         //#line 21 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/datastructures/MinBuffer.x10"
-        return t$6290;
+        return t$6748;
     }
     
     
@@ -117,10 +117,10 @@ public class MinBuffer extends x10.core.Ref implements x10.serialization.X10Java
     public double getValue$O() {
         
         //#line 25 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/datastructures/MinBuffer.x10"
-        final double t$6291 = this.value;
+        final double t$6749 = this.value;
         
         //#line 25 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/datastructures/MinBuffer.x10"
-        return t$6291;
+        return t$6749;
     }
     
     
@@ -128,13 +128,13 @@ public class MinBuffer extends x10.core.Ref implements x10.serialization.X10Java
     public void init() {
         
         //#line 29 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/datastructures/MinBuffer.x10"
-        final byte t$6292 = ((byte)0xff);
+        final byte t$6750 = ((byte)0xff);
         
         //#line 29 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/datastructures/MinBuffer.x10"
-        final double t$6293 = ((double)((int)(((byte)(t$6292)))&0xff));
+        final double t$6751 = ((double)((int)(((byte)(t$6750)))&0xff));
         
         //#line 29 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/datastructures/MinBuffer.x10"
-        this.value = t$6293;
+        this.value = t$6751;
         
         //#line 30 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/datastructures/MinBuffer.x10"
         this.index = 0L;
@@ -178,13 +178,13 @@ public class MinBuffer extends x10.core.Ref implements x10.serialization.X10Java
     final public void __fieldInitializers_datastructures_MinBuffer() {
         
         //#line 4 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/datastructures/MinBuffer.x10"
-        final byte t$6294 = ((byte)0xff);
+        final byte t$6752 = ((byte)0xff);
         
         //#line 4 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/datastructures/MinBuffer.x10"
-        final double t$6295 = ((double)((int)(((byte)(t$6294)))&0xff));
+        final double t$6753 = ((double)((int)(((byte)(t$6752)))&0xff));
         
         //#line 3 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/datastructures/MinBuffer.x10"
-        this.value = t$6295;
+        this.value = t$6753;
         
         //#line 3 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/datastructures/MinBuffer.x10"
         this.index = 0L;

@@ -53,49 +53,49 @@ public class Normal extends shaders.Material implements x10.serialization.X10Jav
         final primitives.Vector norm = me.normal(((primitives.Ray)(ray)), (double)(t));
         
         //#line 16 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Normal.x10"
-        final double t$5481 = norm.x;
+        final double t$1203369 = norm.x;
         
         //#line 16 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Normal.x10"
-        final double t$5482 = ((t$5481) + (((double)(1.0))));
+        final double t$1203370 = ((t$1203369) + (((double)(1.0))));
         
         //#line 16 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Normal.x10"
-        final double t$5483 = ((t$5482) / (((double)(2.0))));
+        final double t$1203371 = ((t$1203370) / (((double)(2.0))));
         
         //#line 16 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Normal.x10"
-        final double t$5484 = raytracer.Utilities.interpolate$O((double)(t$5483), (double)(0.0), (double)(255.0));
+        final double t$1203372 = raytracer.Utilities.interpolate$O((double)(t$1203371), (double)(0.0), (double)(255.0));
         
         //#line 16 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Normal.x10"
-        final long t$5491 = ((long)(double)(((double)(t$5484))));
+        final long t$1203379 = ((long)(double)(((double)(t$1203372))));
         
         //#line 17 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Normal.x10"
-        final double t$5485 = norm.y;
+        final double t$1203373 = norm.y;
         
         //#line 17 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Normal.x10"
-        final double t$5486 = ((t$5485) + (((double)(1.0))));
+        final double t$1203374 = ((t$1203373) + (((double)(1.0))));
         
         //#line 17 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Normal.x10"
-        final double t$5487 = ((t$5486) / (((double)(2.0))));
+        final double t$1203375 = ((t$1203374) / (((double)(2.0))));
         
         //#line 17 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Normal.x10"
-        final double t$5488 = raytracer.Utilities.interpolate$O((double)(t$5487), (double)(0.0), (double)(255.0));
+        final double t$1203376 = raytracer.Utilities.interpolate$O((double)(t$1203375), (double)(0.0), (double)(255.0));
         
         //#line 17 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Normal.x10"
-        final long t$5492 = ((long)(double)(((double)(t$5488))));
+        final long t$1203380 = ((long)(double)(((double)(t$1203376))));
         
         //#line 18 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Normal.x10"
-        final double t$5489 = norm.z;
+        final double t$1203377 = norm.z;
         
         //#line 18 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Normal.x10"
-        final double t$5490 = raytracer.Utilities.interpolate$O((double)(t$5489), (double)(128.0), (double)(255.0));
+        final double t$1203378 = raytracer.Utilities.interpolate$O((double)(t$1203377), (double)(128.0), (double)(255.0));
         
         //#line 18 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Normal.x10"
-        final long t$5493 = ((long)(double)(((double)(t$5490))));
+        final long t$1203381 = ((long)(double)(((double)(t$1203378))));
         
         //#line 15 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Normal.x10"
-        final primitives.Color t$5494 = ((primitives.Color)(new primitives.Color((java.lang.System[]) null).primitives$Color$$init$S(t$5491, t$5492, t$5493, ((long)(255L)))));
+        final primitives.Color t$1203382 = ((primitives.Color)(new primitives.Color((java.lang.System[]) null).primitives$Color$$init$S(t$1203379, t$1203380, t$1203381, ((long)(255L)))));
         
         //#line 15 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Normal.x10"
-        return t$5494;
+        return t$1203382;
     }
     
     

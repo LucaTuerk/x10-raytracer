@@ -78,16 +78,16 @@ public class SemiFlat extends shaders.Material implements x10.serialization.X10J
             shaders.Material flat = ((shaders.Material)(new shaders.Flat((java.lang.System[]) null).shaders$Flat$$init$S(((primitives.Color)(col)), ((double)(amb)))));
             
             //#line 10 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/SemiFlat.x10"
-            final shaders.Material t$5495 = ((shaders.Material)(phong));
+            final shaders.Material t$1256990 = ((shaders.Material)(phong));
             
             //#line 10 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/SemiFlat.x10"
-            final shaders.Material t$5496 = ((shaders.Material)(flat));
+            final shaders.Material t$1256991 = ((shaders.Material)(flat));
             
             //#line 10 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/SemiFlat.x10"
-            final shaders.MixMaterial t$5497 = ((shaders.MixMaterial)(new shaders.MixMaterial((java.lang.System[]) null).shaders$MixMaterial$$init$S(t$5495, t$5496, ((double)(fac)))));
+            final shaders.MixMaterial t$1256992 = ((shaders.MixMaterial)(new shaders.MixMaterial((java.lang.System[]) null).shaders$MixMaterial$$init$S(t$1256990, t$1256991, ((double)(fac)))));
             
             //#line 10 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/SemiFlat.x10"
-            this.mix = ((shaders.Material)(t$5497));
+            this.mix = ((shaders.Material)(t$1256992));
         }
         return this;
     }
@@ -98,13 +98,13 @@ public class SemiFlat extends shaders.Material implements x10.serialization.X10J
     public primitives.Color evaluate__3$1primitives$Light$2__4$1primitives$Intersectable$2(final primitives.Intersectable me, final primitives.Ray ray, final double t, final x10.core.Rail lights, final x10.core.Rail objects) {
         
         //#line 19 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/SemiFlat.x10"
-        final shaders.Material t$5498 = ((shaders.Material)(this.mix));
+        final shaders.Material t$1256993 = ((shaders.Material)(this.mix));
         
         //#line 19 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/SemiFlat.x10"
-        final primitives.Color t$5499 = t$5498.evaluate__3$1primitives$Light$2__4$1primitives$Intersectable$2(((primitives.Intersectable)(me)), ((primitives.Ray)(ray)), (double)(t), ((x10.core.Rail)(lights)), ((x10.core.Rail)(objects)));
+        final primitives.Color t$1256994 = t$1256993.evaluate__3$1primitives$Light$2__4$1primitives$Intersectable$2(((primitives.Intersectable)(me)), ((primitives.Ray)(ray)), (double)(t), ((x10.core.Rail)(lights)), ((x10.core.Rail)(objects)));
         
         //#line 19 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/SemiFlat.x10"
-        return t$5499;
+        return t$1256994;
     }
     
     

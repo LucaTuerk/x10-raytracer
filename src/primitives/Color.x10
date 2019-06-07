@@ -1,6 +1,14 @@
 package primitives;
+import x10.util.Random;
 
 public class Color {
+	public static val EMPTY = new Color(0,0,0,0);
+	public static val WHITE = new Color(255,255,255,255);
+	public static val BLACK = new Color(0,0,0,255);
+	public static val BLUE = new Color(0,0,255,255);
+	public static val GREEN = new Color(0,255,0,255);
+	public static val RED = new Color(255,0,0,255);
+	
 	public var r : UByte;
 	public var g : UByte;
 	public var b : UByte;
@@ -42,5 +50,37 @@ public class Color {
 	
 	public def copy() : Color {
 		return new Color(this.r, this.g, this.b, this.a);
+	}
+	
+	public static def mix (colors:Rail[Color], factors:Rail[Double]) : Color {
+		var out:Color = EMPTY;
+		var fac:Double = -1.0;
+		if(colors.size != factors.size) 
+			fac = 1.0 / colors.size;
+		
+		for(var i:Int = 0n; i < colors.size; i++) {
+			if(fac != -1.0) {
+				val c = colors(i).copy();
+				c.scalar(factors(i));
+				out.add(c);
+			}
+			else {
+				val c = colors(i).copy();
+				c.scalar(fac);
+				out.add(c);
+			}
+		}
+		return out;
+	}
+	
+	public static def random () : Color {
+		val r:Random = new Random();
+		var vec:Vector = new Vector(r.nextDouble(),r.nextDouble(),r.nextDouble());
+		vec = Vector.normalize(vec);
+		vec = Vector.scalar(0.2+(r.nextDouble()*0.8), vec);
+		
+		val colors = [RED, GREEN, BLUE];
+		val factors = [vec.x, vec.y, vec.z];
+		return mix(colors,factors);
 	}
 }

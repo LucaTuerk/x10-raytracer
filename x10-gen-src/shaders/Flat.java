@@ -91,35 +91,35 @@ public class Flat extends shaders.Material implements x10.serialization.X10JavaS
     public primitives.Color evaluate__3$1primitives$Light$2__4$1primitives$Intersectable$2(final primitives.Intersectable me, final primitives.Ray ray, final double t, final x10.core.Rail lights, final x10.core.Rail objects) {
         
         //#line 21 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-        final primitives.Color t$42070 = ((primitives.Color)(this.color));
+        final primitives.Color t$1242053 = ((primitives.Color)(this.color));
         
         //#line 21 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-        primitives.Color out = t$42070.copy();
+        primitives.Color out = t$1242053.copy();
         
         //#line 22 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-        final primitives.Color t$42071 = ((primitives.Color)(out));
+        final primitives.Color t$1242054 = ((primitives.Color)(out));
         
         //#line 22 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-        final double t$42072 = this.ambient;
+        final double t$1242055 = this.ambient;
         
         //#line 22 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-        t$42071.scalarKeepAlpha((double)(t$42072));
+        t$1242054.scalarKeepAlpha((double)(t$1242055));
         
         //#line 24 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-        final x10.core.Rail rail$42151 = ((x10.core.Rail)(lights));
+        final x10.core.Rail rail$1242139 = ((x10.core.Rail)(lights));
         
         //#line 24 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-        final long size$42152 = ((x10.core.Rail<primitives.Light>)rail$42151).size;
+        final long size$1242141 = ((x10.core.Rail<primitives.Light>)rail$1242139).size;
         
         //#line 24 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-        long idx$42148 = 0L;
+        long idx$1242135 = 0L;
         {
             
             //#line 24 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-            final primitives.Intersectable[] objects$value$42153 = ((primitives.Intersectable[])objects.value);
+            final primitives.Intersectable[] objects$value$1242150 = ((primitives.Intersectable[])objects.value);
             
             //#line 24 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-            final primitives.Light[] rail$42151$value$42154 = ((primitives.Light[])rail$42151.value);
+            final primitives.Light[] rail$1242139$value$1242151 = ((primitives.Light[])rail$1242139.value);
             
             //#line 24 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
             for (;
@@ -127,89 +127,89 @@ public class Flat extends shaders.Material implements x10.serialization.X10JavaS
                  ) {
                 
                 //#line 24 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                final long t$42149 = idx$42148;
+                final long t$1242136 = idx$1242135;
                 
                 //#line 24 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                final boolean t$42150 = ((t$42149) < (((long)(size$42152))));
+                final boolean t$1242137 = ((t$1242136) < (((long)(size$1242141))));
                 
                 //#line 24 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                if (!(t$42150)) {
+                if (!(t$1242137)) {
                     
                     //#line 24 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
                     break;
                 }
                 
                 //#line 24 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                final long t$42144 = idx$42148;
+                final long t$1242127 = idx$1242135;
                 
                 //#line 24 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                final primitives.Light light$42145 = ((primitives.Light)rail$42151$value$42154[(int)t$42144]);
+                final primitives.Light light$1242128 = ((primitives.Light)rail$1242139$value$1242151[(int)t$1242127]);
                 
                 //#line 26 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                final primitives.Vector t$42120 = ((primitives.Vector)(ray.dir));
+                final primitives.Vector t$1242103 = ((primitives.Vector)(ray.dir));
                 
                 //#line 26 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                final primitives.Vector v$42121 = primitives.Vector.scalar((double)(t), ((primitives.Vector)(t$42120)));
+                final primitives.Vector v$1242104 = primitives.Vector.scalar((double)(t), ((primitives.Vector)(t$1242103)));
                 
                 //#line 27 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                final primitives.Vector t$42122 = ((primitives.Vector)(ray.origin));
+                final primitives.Vector t$1242105 = ((primitives.Vector)(ray.origin));
                 
                 //#line 27 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                primitives.Vector p$42123 = primitives.Vector.add(((primitives.Vector)(t$42122)), ((primitives.Vector)(v$42121)));
+                primitives.Vector p$1242106 = primitives.Vector.add(((primitives.Vector)(t$1242105)), ((primitives.Vector)(v$1242104)));
                 
                 //#line 28 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                primitives.Vector n$42124 = me.normal(((primitives.Ray)(ray)), (double)(t));
+                primitives.Vector n$1242107 = me.normal(((primitives.Ray)(ray)), (double)(t));
                 
                 //#line 29 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                final primitives.Vector t$42125 = ((primitives.Vector)(p$42123));
+                final primitives.Vector t$1242108 = ((primitives.Vector)(p$1242106));
                 
                 //#line 29 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                final primitives.Vector t$42126 = ((primitives.Vector)(n$42124));
+                final primitives.Vector t$1242109 = ((primitives.Vector)(n$1242107));
                 
                 //#line 29 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                final primitives.Vector t$42127 = primitives.Vector.scalar((double)(1.0E-6), ((primitives.Vector)(t$42126)));
+                final primitives.Vector t$1242110 = primitives.Vector.scalar((double)(1.0E-6), ((primitives.Vector)(t$1242109)));
                 
                 //#line 29 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                final primitives.Vector t$42128 = primitives.Vector.add(((primitives.Vector)(t$42125)), ((primitives.Vector)(t$42127)));
+                final primitives.Vector t$1242111 = primitives.Vector.add(((primitives.Vector)(t$1242108)), ((primitives.Vector)(t$1242110)));
                 
                 //#line 29 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                p$42123 = ((primitives.Vector)(t$42128));
+                p$1242106 = ((primitives.Vector)(t$1242111));
                 
                 //#line 30 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                final primitives.Vector t$42129 = ((primitives.Vector)(p$42123));
+                final primitives.Vector t$1242112 = ((primitives.Vector)(p$1242106));
                 
                 //#line 30 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                final primitives.Vector t$42130 = ((primitives.Vector)(light$42145.pos));
+                final primitives.Vector t$1242113 = ((primitives.Vector)(light$1242128.pos));
                 
                 //#line 30 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                final primitives.Vector t$42131 = primitives.Vector.sub(((primitives.Vector)(t$42129)), ((primitives.Vector)(t$42130)));
+                final primitives.Vector t$1242114 = primitives.Vector.sub(((primitives.Vector)(t$1242112)), ((primitives.Vector)(t$1242113)));
                 
                 //#line 30 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                final primitives.Vector u$42132 = primitives.Vector.normalize(((primitives.Vector)(t$42131)));
+                final primitives.Vector u$1242115 = primitives.Vector.normalize(((primitives.Vector)(t$1242114)));
                 
                 //#line 31 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                final primitives.Vector t$42133 = ((primitives.Vector)(p$42123));
+                final primitives.Vector t$1242116 = ((primitives.Vector)(p$1242106));
                 
                 //#line 31 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                final primitives.Ray lightRay$42134 = new primitives.Ray((java.lang.System[]) null).primitives$Ray$$init$S(t$42133, ((primitives.Vector)(u$42132)));
+                final primitives.Ray lightRay$1242117 = new primitives.Ray((java.lang.System[]) null).primitives$Ray$$init$S(t$1242116, ((primitives.Vector)(u$1242115)));
                 
                 //#line 33 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                final datastructures.MinBuffer t$42135 = raytracer.Raytracer.getBuffer();
+                final datastructures.MinBuffer t$1242118 = raytracer.Raytracer.getBuffer();
                 
                 //#line 33 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                t$42135.init();
+                t$1242118.init();
                 
                 //#line 35 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                final long i$42028min$42117 = 0L;
+                final long i$1241897min$1242100 = 0L;
                 
                 //#line 35 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                final long t$42118 = ((x10.core.Rail<primitives.Intersectable>)objects).size;
+                final long t$1242101 = ((x10.core.Rail<primitives.Intersectable>)objects).size;
                 
                 //#line 35 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                final long i$42028max$42119 = ((t$42118) - (((long)(1L))));
+                final long i$1241897max$1242102 = ((t$1242101) - (((long)(1L))));
                 
                 //#line 35 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                long i$42114 = i$42028min$42117;
+                long i$1242097 = i$1241897min$1242100;
                 {
                     
                     //#line 35 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
@@ -218,97 +218,97 @@ public class Flat extends shaders.Material implements x10.serialization.X10JavaS
                          ) {
                         
                         //#line 35 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                        final long t$42115 = i$42114;
+                        final long t$1242098 = i$1242097;
                         
                         //#line 35 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                        final boolean t$42116 = ((t$42115) <= (((long)(i$42028max$42119))));
+                        final boolean t$1242099 = ((t$1242098) <= (((long)(i$1241897max$1242102))));
                         
                         //#line 35 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                        if (!(t$42116)) {
+                        if (!(t$1242099)) {
                             
                             //#line 35 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
                             break;
                         }
                         
                         //#line 35 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                        final long j$42111 = i$42114;
+                        final long j$1242094 = i$1242097;
                         
                         //#line 36 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                        final primitives.Intersectable t$42107 = ((primitives.Intersectable)objects$value$42153[(int)j$42111]);
+                        final primitives.Intersectable t$1242090 = ((primitives.Intersectable)objects$value$1242150[(int)j$1242094]);
                         
                         //#line 36 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                        double t_prime$42108 = t$42107.intersect$O(((primitives.Ray)(lightRay$42134)));
+                        double t_prime$1242091 = t$1242090.intersect$O(((primitives.Ray)(lightRay$1242117)));
                         
                         //#line 37 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                        final datastructures.MinBuffer t$42109 = raytracer.Raytracer.getBuffer();
+                        final datastructures.MinBuffer t$1242092 = raytracer.Raytracer.getBuffer();
                         
                         //#line 37 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                        final double t$42110 = t_prime$42108;
+                        final double t$1242093 = t_prime$1242091;
                         
                         //#line 37 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                        t$42109.insert((long)(j$42111), (double)(t$42110));
+                        t$1242092.insert((long)(j$1242094), (double)(t$1242093));
                         
                         //#line 35 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                        final long t$42112 = i$42114;
+                        final long t$1242095 = i$1242097;
                         
                         //#line 35 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                        final long t$42113 = ((t$42112) + (((long)(1L))));
+                        final long t$1242096 = ((t$1242095) + (((long)(1L))));
                         
                         //#line 35 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                        i$42114 = t$42113;
+                        i$1242097 = t$1242096;
                     }
                 }
                 
                 //#line 39 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                final datastructures.MinBuffer t$42136 = raytracer.Raytracer.getBuffer();
+                final datastructures.MinBuffer t$1242119 = raytracer.Raytracer.getBuffer();
                 
                 //#line 39 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                final boolean t$42137 = t$42136.isEmpty$O();
+                final boolean t$1242120 = t$1242119.isEmpty$O();
                 
                 //#line 39 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                if (t$42137) {
+                if (t$1242120) {
                     
                     //#line 40 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                    final primitives.Color t$42138 = ((primitives.Color)(light$42145.color));
+                    final primitives.Color t$1242121 = ((primitives.Color)(light$1242128.color));
                     
                     //#line 40 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                    primitives.Color c$42139 = t$42138.copy();
+                    primitives.Color c$1242122 = t$1242121.copy();
                     
                     //#line 41 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                    final primitives.Color t$42140 = ((primitives.Color)(c$42139));
+                    final primitives.Color t$1242123 = ((primitives.Color)(c$1242122));
                     
                     //#line 41 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                    final double t$42141 = light$42145.intensity;
+                    final double t$1242124 = light$1242128.intensity;
                     
                     //#line 41 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                    t$42140.scalarKeepAlpha((double)(t$42141));
+                    t$1242123.scalarKeepAlpha((double)(t$1242124));
                     
                     //#line 42 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                    final primitives.Color t$42142 = ((primitives.Color)(out));
+                    final primitives.Color t$1242125 = ((primitives.Color)(out));
                     
                     //#line 42 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                    final primitives.Color t$42143 = ((primitives.Color)(c$42139));
+                    final primitives.Color t$1242126 = ((primitives.Color)(c$1242122));
                     
                     //#line 42 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                    t$42142.add(((primitives.Color)(t$42143)));
+                    t$1242125.add(((primitives.Color)(t$1242126)));
                 }
                 
                 //#line 24 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                final long t$42146 = idx$42148;
+                final long t$1242133 = idx$1242135;
                 
                 //#line 24 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                final long t$42147 = ((t$42146) + (((long)(1L))));
+                final long t$1242134 = ((t$1242133) + (((long)(1L))));
                 
                 //#line 24 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-                idx$42148 = t$42147;
+                idx$1242135 = t$1242134;
             }
         }
         
         //#line 46 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-        final primitives.Color t$42106 = ((primitives.Color)(out));
+        final primitives.Color t$1242089 = ((primitives.Color)(out));
         
         //#line 46 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/shaders/Flat.x10"
-        return t$42106;
+        return t$1242089;
     }
     
     

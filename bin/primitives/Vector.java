@@ -96,28 +96,28 @@ public class Vector extends x10.core.Ref implements x10.serialization.X10JavaSer
     public static primitives.Vector scalar(final double sc, final primitives.Vector vec) {
         
         //#line 18 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        final double t$6225 = vec.x;
+        final double t$6683 = vec.x;
         
         //#line 18 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        final double t$6228 = ((sc) * (((double)(t$6225))));
+        final double t$6686 = ((sc) * (((double)(t$6683))));
         
         //#line 18 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        final double t$6226 = vec.y;
+        final double t$6684 = vec.y;
         
         //#line 18 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        final double t$6229 = ((sc) * (((double)(t$6226))));
+        final double t$6687 = ((sc) * (((double)(t$6684))));
         
         //#line 18 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        final double t$6227 = vec.z;
+        final double t$6685 = vec.z;
         
         //#line 18 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        final double t$6230 = ((sc) * (((double)(t$6227))));
+        final double t$6688 = ((sc) * (((double)(t$6685))));
         
         //#line 18 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        final primitives.Vector t$6231 = ((primitives.Vector)(new primitives.Vector((java.lang.System[]) null).primitives$Vector$$init$S(t$6228, t$6229, t$6230)));
+        final primitives.Vector t$6689 = ((primitives.Vector)(new primitives.Vector((java.lang.System[]) null).primitives$Vector$$init$S(t$6686, t$6687, t$6688)));
         
         //#line 18 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        return t$6231;
+        return t$6689;
     }
     
     
@@ -125,37 +125,37 @@ public class Vector extends x10.core.Ref implements x10.serialization.X10JavaSer
     public static primitives.Vector add(final primitives.Vector vec1, final primitives.Vector vec2) {
         
         //#line 22 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        final double t$6232 = vec1.x;
+        final double t$6690 = vec1.x;
         
         //#line 22 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        final double t$6233 = vec2.x;
+        final double t$6691 = vec2.x;
         
         //#line 22 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        final double t$6238 = ((t$6232) + (((double)(t$6233))));
+        final double t$6696 = ((t$6690) + (((double)(t$6691))));
         
         //#line 22 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        final double t$6234 = vec1.y;
+        final double t$6692 = vec1.y;
         
         //#line 22 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        final double t$6235 = vec2.y;
+        final double t$6693 = vec2.y;
         
         //#line 22 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        final double t$6239 = ((t$6234) + (((double)(t$6235))));
+        final double t$6697 = ((t$6692) + (((double)(t$6693))));
         
         //#line 22 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        final double t$6236 = vec1.z;
+        final double t$6694 = vec1.z;
         
         //#line 22 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        final double t$6237 = vec2.z;
+        final double t$6695 = vec2.z;
         
         //#line 22 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        final double t$6240 = ((t$6236) + (((double)(t$6237))));
+        final double t$6698 = ((t$6694) + (((double)(t$6695))));
         
         //#line 22 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        final primitives.Vector t$6241 = ((primitives.Vector)(new primitives.Vector((java.lang.System[]) null).primitives$Vector$$init$S(t$6238, t$6239, t$6240)));
+        final primitives.Vector t$6699 = ((primitives.Vector)(new primitives.Vector((java.lang.System[]) null).primitives$Vector$$init$S(t$6696, t$6697, t$6698)));
         
         //#line 22 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        return t$6241;
+        return t$6699;
     }
     
     
@@ -163,37 +163,37 @@ public class Vector extends x10.core.Ref implements x10.serialization.X10JavaSer
     public static primitives.Vector sub(final primitives.Vector vec1, final primitives.Vector vec2) {
         
         //#line 26 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        final double t$6242 = vec1.x;
+        final double t$6700 = vec1.x;
         
         //#line 26 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        final double t$6243 = vec2.x;
+        final double t$6701 = vec2.x;
         
         //#line 26 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        final double t$6248 = ((t$6242) - (((double)(t$6243))));
+        final double t$6706 = ((t$6700) - (((double)(t$6701))));
         
         //#line 26 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        final double t$6244 = vec1.y;
+        final double t$6702 = vec1.y;
         
         //#line 26 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        final double t$6245 = vec2.y;
+        final double t$6703 = vec2.y;
         
         //#line 26 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        final double t$6249 = ((t$6244) - (((double)(t$6245))));
+        final double t$6707 = ((t$6702) - (((double)(t$6703))));
         
         //#line 26 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        final double t$6246 = vec1.z;
+        final double t$6704 = vec1.z;
         
         //#line 26 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        final double t$6247 = vec2.z;
+        final double t$6705 = vec2.z;
         
         //#line 26 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        final double t$6250 = ((t$6246) - (((double)(t$6247))));
+        final double t$6708 = ((t$6704) - (((double)(t$6705))));
         
         //#line 26 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        final primitives.Vector t$6251 = ((primitives.Vector)(new primitives.Vector((java.lang.System[]) null).primitives$Vector$$init$S(t$6248, t$6249, t$6250)));
+        final primitives.Vector t$6709 = ((primitives.Vector)(new primitives.Vector((java.lang.System[]) null).primitives$Vector$$init$S(t$6706, t$6707, t$6708)));
         
         //#line 26 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        return t$6251;
+        return t$6709;
     }
     
     
@@ -201,40 +201,40 @@ public class Vector extends x10.core.Ref implements x10.serialization.X10JavaSer
     public static double dot$O(final primitives.Vector vec1, final primitives.Vector vec2) {
         
         //#line 30 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        final double t$6252 = vec1.x;
+        final double t$6710 = vec1.x;
         
         //#line 30 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        final double t$6253 = vec2.x;
+        final double t$6711 = vec2.x;
         
         //#line 30 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        final double t$6256 = ((t$6252) * (((double)(t$6253))));
+        final double t$6714 = ((t$6710) * (((double)(t$6711))));
         
         //#line 30 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        final double t$6254 = vec1.y;
+        final double t$6712 = vec1.y;
         
         //#line 30 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        final double t$6255 = vec2.y;
+        final double t$6713 = vec2.y;
         
         //#line 30 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        final double t$6257 = ((t$6254) * (((double)(t$6255))));
+        final double t$6715 = ((t$6712) * (((double)(t$6713))));
         
         //#line 30 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        final double t$6260 = ((t$6256) + (((double)(t$6257))));
+        final double t$6718 = ((t$6714) + (((double)(t$6715))));
         
         //#line 30 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        final double t$6258 = vec1.z;
+        final double t$6716 = vec1.z;
         
         //#line 30 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        final double t$6259 = vec2.z;
+        final double t$6717 = vec2.z;
         
         //#line 30 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        final double t$6261 = ((t$6258) * (((double)(t$6259))));
+        final double t$6719 = ((t$6716) * (((double)(t$6717))));
         
         //#line 30 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        final double t$6262 = ((t$6260) + (((double)(t$6261))));
+        final double t$6720 = ((t$6718) + (((double)(t$6719))));
         
         //#line 30 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        return t$6262;
+        return t$6720;
     }
     
     
@@ -242,13 +242,13 @@ public class Vector extends x10.core.Ref implements x10.serialization.X10JavaSer
     public static double norm$O(final primitives.Vector vec) {
         
         //#line 34 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        final double t$6263 = primitives.Vector.dot$O(((primitives.Vector)(vec)), ((primitives.Vector)(vec)));
+        final double t$6721 = primitives.Vector.dot$O(((primitives.Vector)(vec)), ((primitives.Vector)(vec)));
         
         //#line 34 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        final double t$6264 = java.lang.Math.sqrt(((double)(t$6263)));
+        final double t$6722 = java.lang.Math.sqrt(((double)(t$6721)));
         
         //#line 34 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        return t$6264;
+        return t$6722;
     }
     
     
@@ -256,19 +256,19 @@ public class Vector extends x10.core.Ref implements x10.serialization.X10JavaSer
     public static primitives.Vector normalize(final primitives.Vector vec) {
         
         //#line 38 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        final double t$6265 = ((double)(long)(((long)(1L))));
+        final double t$6723 = ((double)(long)(((long)(1L))));
         
         //#line 38 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        final double t$6266 = primitives.Vector.norm$O(((primitives.Vector)(vec)));
+        final double t$6724 = primitives.Vector.norm$O(((primitives.Vector)(vec)));
         
         //#line 38 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        final double t$6267 = ((t$6265) / (((double)(t$6266))));
+        final double t$6725 = ((t$6723) / (((double)(t$6724))));
         
         //#line 38 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        final primitives.Vector t$6268 = primitives.Vector.scalar((double)(t$6267), ((primitives.Vector)(vec)));
+        final primitives.Vector t$6726 = primitives.Vector.scalar((double)(t$6725), ((primitives.Vector)(vec)));
         
         //#line 38 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Vector.x10"
-        return t$6268;
+        return t$6726;
     }
     
     
@@ -311,8 +311,8 @@ public class Vector extends x10.core.Ref implements x10.serialization.X10JavaSer
         if (primitives.Vector.initStatus$one.compareAndSet((int)(x10.runtime.impl.java.InitDispatcher.UNINITIALIZED), (int)(x10.runtime.impl.java.InitDispatcher.INITIALIZING))) {
             try {{
                 primitives.Vector.one = new primitives.Vector((java.lang.System[]) null).primitives$Vector$$init$S(((double)(long)(((long)(1L)))), ((double)(long)(((long)(1L)))), ((double)(long)(((long)(1L)))));
-            }}catch (java.lang.Throwable exc$6269) {
-                primitives.Vector.exception$one = new x10.lang.ExceptionInInitializer(exc$6269);
+            }}catch (java.lang.Throwable exc$6727) {
+                primitives.Vector.exception$one = new x10.lang.ExceptionInInitializer(exc$6727);
                 primitives.Vector.initStatus$one.set((int)(x10.runtime.impl.java.InitDispatcher.EXCEPTION_RAISED));
                 x10.runtime.impl.java.InitDispatcher.lockInitialized();
                 x10.runtime.impl.java.InitDispatcher.notifyInitialized();
@@ -355,8 +355,8 @@ public class Vector extends x10.core.Ref implements x10.serialization.X10JavaSer
         if (primitives.Vector.initStatus$zero.compareAndSet((int)(x10.runtime.impl.java.InitDispatcher.UNINITIALIZED), (int)(x10.runtime.impl.java.InitDispatcher.INITIALIZING))) {
             try {{
                 primitives.Vector.zero = new primitives.Vector((java.lang.System[]) null).primitives$Vector$$init$S(((double)(long)(((long)(0L)))), ((double)(long)(((long)(0L)))), ((double)(long)(((long)(0L)))));
-            }}catch (java.lang.Throwable exc$6270) {
-                primitives.Vector.exception$zero = new x10.lang.ExceptionInInitializer(exc$6270);
+            }}catch (java.lang.Throwable exc$6728) {
+                primitives.Vector.exception$zero = new x10.lang.ExceptionInInitializer(exc$6728);
                 primitives.Vector.initStatus$zero.set((int)(x10.runtime.impl.java.InitDispatcher.EXCEPTION_RAISED));
                 x10.runtime.impl.java.InitDispatcher.lockInitialized();
                 x10.runtime.impl.java.InitDispatcher.notifyInitialized();

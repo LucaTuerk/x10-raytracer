@@ -47,28 +47,28 @@ public class Utilities extends x10.core.Ref implements x10.serialization.X10Java
         x10.core.Rail p = new x10.core.Rail<x10.core.Long>(x10.rtt.Types.LONG, ((long)(2L)));
         
         //#line 11 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final x10.core.Rail t$7060 = ((x10.core.Rail)(p));
+        final x10.core.Rail t$7147 = ((x10.core.Rail)(p));
         
         //#line 11 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final long t$7061 = ((i) % (((long)(w))));
+        final long t$7148 = ((i) % (((long)(w))));
         
         //#line 11 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        ((long[])t$7060.value)[(int)0L] = t$7061;
+        ((long[])t$7147.value)[(int)0L] = t$7148;
         
         //#line 12 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final x10.core.Rail t$7062 = ((x10.core.Rail)(p));
+        final x10.core.Rail t$7149 = ((x10.core.Rail)(p));
         
         //#line 12 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final long t$7063 = ((i) / (((long)(w))));
+        final long t$7150 = ((i) / (((long)(w))));
         
         //#line 12 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        ((long[])t$7062.value)[(int)1L] = t$7063;
+        ((long[])t$7149.value)[(int)1L] = t$7150;
         
         //#line 13 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final x10.core.Rail t$7064 = ((x10.core.Rail)(p));
+        final x10.core.Rail t$7151 = ((x10.core.Rail)(p));
         
         //#line 13 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        return t$7064;
+        return t$7151;
     }
     
     
@@ -76,180 +76,180 @@ public class Utilities extends x10.core.Ref implements x10.serialization.X10Java
     public static void writePng__0$1x10$lang$UByte$2(final x10.core.Rail<x10.core.UByte> img, final int width, final int height, final java.io.File file) {
         
         //#line 18 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final int t$7065 = ((int)(long)(((long)(2L))));
+        final int t$7152 = ((int)(long)(((long)(2L))));
         
         //#line 18 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final java.awt.image.BufferedImage buf = new java.awt.image.BufferedImage(((int)(width)), ((int)(height)), t$7065);
+        final java.awt.image.BufferedImage buf = new java.awt.image.BufferedImage(((int)(width)), ((int)(height)), t$7152);
         
         //#line 19 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
         long i = 0L;
         
         //#line 20 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final x10.io.Printer t$7066 = ((x10.io.Printer)(x10.io.Console.get$OUT()));
+        final x10.io.Printer t$7153 = ((x10.io.Printer)(x10.io.Console.get$OUT()));
         
         //#line 20 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        t$7066.println();
+        t$7153.println();
         {
             
             //#line 22 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-            final byte[] img$value$7194 = ((byte[])img.value);
+            final byte[] img$value$7281 = ((byte[])img.value);
             
             //#line 22 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
             while (true) {
                 
                 //#line 22 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                final long t$7068 = i;
+                final long t$7155 = i;
                 
                 //#line 22 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                final long t$7067 = ((x10.core.Rail<x10.core.UByte>)img).size;
+                final long t$7154 = ((x10.core.Rail<x10.core.UByte>)img).size;
                 
                 //#line 22 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                final long t$7069 = ((t$7067) - (((long)(1L))));
+                final long t$7156 = ((t$7154) - (((long)(1L))));
                 
                 //#line 22 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                final boolean t$7107 = ((t$7068) < (((long)(t$7069))));
+                final boolean t$7194 = ((t$7155) < (((long)(t$7156))));
                 
                 //#line 22 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                if (!(t$7107)) {
+                if (!(t$7194)) {
                     
                     //#line 22 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
                     break;
                 }
                 
                 //#line 24 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                final long t$7155 = i;
+                final long t$7242 = i;
                 
                 //#line 24 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                final long t$7156 = ((t$7155) / (((long)(4L))));
+                final long t$7243 = ((t$7242) / (((long)(4L))));
                 
                 //#line 24 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                final long t$7157 = ((long)(((int)(width))));
+                final long t$7244 = ((long)(((int)(width))));
                 
                 //#line 24 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                final x10.core.Rail pos$7158 = raytracer.Utilities.idx((long)(t$7156), (long)(t$7157));
+                final x10.core.Rail pos$7245 = raytracer.Utilities.idx((long)(t$7243), (long)(t$7244));
                 
                 //#line 25 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                int col$7159 = ((int)(long)(((long)(0L))));
+                int col$7246 = ((int)(long)(((long)(0L))));
                 
                 //#line 27 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                final long t$7160 = i;
+                final long t$7247 = i;
                 
                 //#line 27 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                final byte t$7161 = ((byte)img$value$7194[(int)t$7160]);
+                final byte t$7248 = ((byte)img$value$7281[(int)t$7247]);
                 
                 //#line 27 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                final int t$7162 = ((int) (((byte)(((byte)(t$7161)))) & 0xff));
+                final int t$7249 = ((int) (((byte)(((byte)(t$7248)))) & 0xff));
                 
                 //#line 27 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                final int t$7163 = ((t$7162) << (int)(((long)(16L))));
+                final int t$7250 = ((t$7249) << (int)(((long)(16L))));
                 
                 //#line 27 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                final int t$7164 = col$7159;
+                final int t$7251 = col$7246;
                 
                 //#line 27 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                final int t$7165 = ((t$7163) | (((int)(t$7164))));
+                final int t$7252 = ((t$7250) | (((int)(t$7251))));
                 
                 //#line 27 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                col$7159 = ((int)(((int)(t$7165))));
+                col$7246 = ((int)(((int)(t$7252))));
                 
                 //#line 28 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                final long t$7166 = i;
+                final long t$7253 = i;
                 
                 //#line 28 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                final long t$7167 = ((t$7166) + (((long)(1L))));
+                final long t$7254 = ((t$7253) + (((long)(1L))));
                 
                 //#line 28 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                final byte t$7168 = ((byte)img$value$7194[(int)t$7167]);
+                final byte t$7255 = ((byte)img$value$7281[(int)t$7254]);
                 
                 //#line 28 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                final int t$7169 = ((int) (((byte)(((byte)(t$7168)))) & 0xff));
+                final int t$7256 = ((int) (((byte)(((byte)(t$7255)))) & 0xff));
                 
                 //#line 28 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                final int t$7170 = ((t$7169) << (int)(((long)(8L))));
+                final int t$7257 = ((t$7256) << (int)(((long)(8L))));
                 
                 //#line 28 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                final int t$7171 = col$7159;
+                final int t$7258 = col$7246;
                 
                 //#line 28 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                final int t$7172 = ((t$7170) | (((int)(t$7171))));
+                final int t$7259 = ((t$7257) | (((int)(t$7258))));
                 
                 //#line 28 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                col$7159 = ((int)(((int)(t$7172))));
+                col$7246 = ((int)(((int)(t$7259))));
                 
                 //#line 29 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                final long t$7173 = i;
+                final long t$7260 = i;
                 
                 //#line 29 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                final long t$7174 = ((t$7173) + (((long)(2L))));
+                final long t$7261 = ((t$7260) + (((long)(2L))));
                 
                 //#line 29 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                final byte t$7175 = ((byte)img$value$7194[(int)t$7174]);
+                final byte t$7262 = ((byte)img$value$7281[(int)t$7261]);
                 
                 //#line 29 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                final int t$7176 = ((int) (((byte)(((byte)(t$7175)))) & 0xff));
+                final int t$7263 = ((int) (((byte)(((byte)(t$7262)))) & 0xff));
                 
                 //#line 29 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                final int t$7177 = ((t$7176) << (int)(((long)(0L))));
+                final int t$7264 = ((t$7263) << (int)(((long)(0L))));
                 
                 //#line 29 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                final int t$7178 = col$7159;
+                final int t$7265 = col$7246;
                 
                 //#line 29 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                final int t$7179 = ((t$7177) | (((int)(t$7178))));
+                final int t$7266 = ((t$7264) | (((int)(t$7265))));
                 
                 //#line 29 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                col$7159 = ((int)(((int)(t$7179))));
+                col$7246 = ((int)(((int)(t$7266))));
                 
                 //#line 30 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                final long t$7180 = i;
+                final long t$7267 = i;
                 
                 //#line 30 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                final long t$7181 = ((t$7180) + (((long)(3L))));
+                final long t$7268 = ((t$7267) + (((long)(3L))));
                 
                 //#line 30 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                final byte t$7182 = ((byte)img$value$7194[(int)t$7181]);
+                final byte t$7269 = ((byte)img$value$7281[(int)t$7268]);
                 
                 //#line 30 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                final int t$7183 = ((int) (((byte)(((byte)(t$7182)))) & 0xff));
+                final int t$7270 = ((int) (((byte)(((byte)(t$7269)))) & 0xff));
                 
                 //#line 30 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                final int t$7184 = ((t$7183) << (int)(((long)(24L))));
+                final int t$7271 = ((t$7270) << (int)(((long)(24L))));
                 
                 //#line 30 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                final int t$7185 = col$7159;
+                final int t$7272 = col$7246;
                 
                 //#line 30 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                final int t$7186 = ((t$7184) | (((int)(t$7185))));
+                final int t$7273 = ((t$7271) | (((int)(t$7272))));
                 
                 //#line 30 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                col$7159 = ((int)(((int)(t$7186))));
+                col$7246 = ((int)(((int)(t$7273))));
                 
                 //#line 32 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                final long t$7187 = ((long[])pos$7158.value)[(int)0L];
+                final long t$7274 = ((long[])pos$7245.value)[(int)0L];
                 
                 //#line 32 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                final int t$7188 = ((int)(long)(((long)(t$7187))));
+                final int t$7275 = ((int)(long)(((long)(t$7274))));
                 
                 //#line 32 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                final long t$7189 = ((long[])pos$7158.value)[(int)1L];
+                final long t$7276 = ((long[])pos$7245.value)[(int)1L];
                 
                 //#line 32 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                final int t$7190 = ((int)(long)(((long)(t$7189))));
+                final int t$7277 = ((int)(long)(((long)(t$7276))));
                 
                 //#line 32 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                final int t$7191 = col$7159;
+                final int t$7278 = col$7246;
                 
                 //#line 32 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                buf.setRGB((int)(t$7188), (int)(t$7190), (int)(t$7191));
+                buf.setRGB((int)(t$7275), (int)(t$7277), (int)(t$7278));
                 
                 //#line 34 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                final long t$7192 = i;
+                final long t$7279 = i;
                 
                 //#line 34 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                final long t$7193 = ((t$7192) + (((long)(4L))));
+                final long t$7280 = ((t$7279) + (((long)(4L))));
                 
                 //#line 34 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-                i = t$7193;
+                i = t$7280;
             }
         }
         
@@ -258,7 +258,7 @@ public class Utilities extends x10.core.Ref implements x10.serialization.X10Java
             
             //#line 37 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
             javax.imageio.ImageIO.write(((java.awt.image.RenderedImage)(buf)), ((java.lang.String)("png")), ((java.io.File)(file)));
-        }}catch (final java.io.IOException id$2494) {
+        }}catch (final java.io.IOException id$2452) {
             
         }
     }
@@ -283,154 +283,154 @@ public class Utilities extends x10.core.Ref implements x10.serialization.X10Java
         double hf = ((double)(int)(((int)(height))));
         
         //#line 48 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final double t$7108 = xf;
+        final double t$7195 = xf;
         
         //#line 48 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final double t$7109 = xf;
+        final double t$7196 = xf;
         
         //#line 48 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final double t$7112 = ((t$7108) * (((double)(t$7109))));
+        final double t$7199 = ((t$7195) * (((double)(t$7196))));
         
         //#line 48 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final double t$7110 = yf;
+        final double t$7197 = yf;
         
         //#line 48 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final double t$7111 = yf;
+        final double t$7198 = yf;
         
         //#line 48 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final double t$7113 = ((t$7110) * (((double)(t$7111))));
+        final double t$7200 = ((t$7197) * (((double)(t$7198))));
         
         //#line 48 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final double t$7114 = ((t$7112) + (((double)(t$7113))));
+        final double t$7201 = ((t$7199) + (((double)(t$7200))));
         
         //#line 48 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        double upperDist = java.lang.Math.sqrt(((double)(t$7114)));
+        double upperDist = java.lang.Math.sqrt(((double)(t$7201)));
         
         //#line 49 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final double t$7115 = wf;
+        final double t$7202 = wf;
         
         //#line 49 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final double t$7116 = xf;
+        final double t$7203 = xf;
         
         //#line 49 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final double t$7119 = ((t$7115) - (((double)(t$7116))));
+        final double t$7206 = ((t$7202) - (((double)(t$7203))));
         
         //#line 49 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final double t$7117 = wf;
+        final double t$7204 = wf;
         
         //#line 49 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final double t$7118 = xf;
+        final double t$7205 = xf;
         
         //#line 49 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final double t$7120 = ((t$7117) - (((double)(t$7118))));
+        final double t$7207 = ((t$7204) - (((double)(t$7205))));
         
         //#line 49 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final double t$7127 = ((t$7119) * (((double)(t$7120))));
+        final double t$7214 = ((t$7206) * (((double)(t$7207))));
         
         //#line 49 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final double t$7121 = hf;
+        final double t$7208 = hf;
         
         //#line 49 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final double t$7122 = yf;
+        final double t$7209 = yf;
         
         //#line 49 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final double t$7125 = ((t$7121) - (((double)(t$7122))));
+        final double t$7212 = ((t$7208) - (((double)(t$7209))));
         
         //#line 49 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final double t$7123 = hf;
+        final double t$7210 = hf;
         
         //#line 49 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final double t$7124 = yf;
+        final double t$7211 = yf;
         
         //#line 49 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final double t$7126 = ((t$7123) - (((double)(t$7124))));
+        final double t$7213 = ((t$7210) - (((double)(t$7211))));
         
         //#line 49 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final double t$7128 = ((t$7125) * (((double)(t$7126))));
+        final double t$7215 = ((t$7212) * (((double)(t$7213))));
         
         //#line 49 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final double t$7129 = ((t$7127) + (((double)(t$7128))));
+        final double t$7216 = ((t$7214) + (((double)(t$7215))));
         
         //#line 49 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        double lowerDist = java.lang.Math.sqrt(((double)(t$7129)));
+        double lowerDist = java.lang.Math.sqrt(((double)(t$7216)));
         
         //#line 51 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final double t$7134 = ((double)(long)(((long)(1L))));
+        final double t$7221 = ((double)(long)(((long)(1L))));
         
         //#line 51 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final double t$7132 = upperDist;
+        final double t$7219 = upperDist;
         
         //#line 51 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final double t$7130 = upperDist;
+        final double t$7217 = upperDist;
         
         //#line 51 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final double t$7131 = lowerDist;
+        final double t$7218 = lowerDist;
         
         //#line 51 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final double t$7133 = ((t$7130) + (((double)(t$7131))));
+        final double t$7220 = ((t$7217) + (((double)(t$7218))));
         
         //#line 51 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final double t$7135 = ((t$7132) / (((double)(t$7133))));
+        final double t$7222 = ((t$7219) / (((double)(t$7220))));
         
         //#line 51 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        double upperFac = ((t$7134) - (((double)(t$7135))));
+        double upperFac = ((t$7221) - (((double)(t$7222))));
         
         //#line 52 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final double t$7136 = ((double)(long)(((long)(1L))));
+        final double t$7223 = ((double)(long)(((long)(1L))));
         
         //#line 52 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final double t$7137 = upperFac;
+        final double t$7224 = upperFac;
         
         //#line 52 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        double lowerFac = ((t$7136) - (((double)(t$7137))));
+        double lowerFac = ((t$7223) - (((double)(t$7224))));
         
         //#line 54 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final byte t$7138 = ((byte)0xff);
+        final byte t$7225 = ((byte)0xff);
         
         //#line 54 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final double t$7139 = ((double)((int)(((byte)(t$7138)))&0xff));
+        final double t$7226 = ((double)((int)(((byte)(t$7225)))&0xff));
         
         //#line 54 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final double t$7140 = upperFac;
+        final double t$7227 = upperFac;
         
         //#line 54 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final double t$7141 = ((t$7139) * (((double)(t$7140))));
+        final double t$7228 = ((t$7226) * (((double)(t$7227))));
         
         //#line 54 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final byte t$7142 = x10.runtime.impl.java.DoubleUtils.toUByte(((double)(t$7141)));
+        final byte t$7229 = x10.runtime.impl.java.DoubleUtils.toUByte(((double)(t$7228)));
         
         //#line 54 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        ((byte[])col.value)[(int)0L] = t$7142;
+        ((byte[])col.value)[(int)0L] = t$7229;
         
         //#line 55 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final byte t$7143 = ((byte)0xff);
+        final byte t$7230 = ((byte)0xff);
         
         //#line 55 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final double t$7144 = ((double)((int)(((byte)(t$7143)))&0xff));
+        final double t$7231 = ((double)((int)(((byte)(t$7230)))&0xff));
         
         //#line 55 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final double t$7145 = lowerFac;
+        final double t$7232 = lowerFac;
         
         //#line 55 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final double t$7146 = ((t$7144) * (((double)(t$7145))));
+        final double t$7233 = ((t$7231) * (((double)(t$7232))));
         
         //#line 55 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final byte t$7147 = x10.runtime.impl.java.DoubleUtils.toUByte(((double)(t$7146)));
+        final byte t$7234 = x10.runtime.impl.java.DoubleUtils.toUByte(((double)(t$7233)));
         
         //#line 55 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        ((byte[])col.value)[(int)1L] = t$7147;
+        ((byte[])col.value)[(int)1L] = t$7234;
         
         //#line 56 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final byte t$7148 = ((byte)(long)(((long)(0L))));
+        final byte t$7235 = ((byte)(long)(((long)(0L))));
         
         //#line 56 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        ((byte[])col.value)[(int)2L] = t$7148;
+        ((byte[])col.value)[(int)2L] = t$7235;
         
         //#line 57 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final byte t$7149 = ((byte)0xff);
+        final byte t$7236 = ((byte)0xff);
         
         //#line 57 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        ((byte[])col.value)[(int)3L] = t$7149;
+        ((byte[])col.value)[(int)3L] = t$7236;
         
         //#line 59 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
         return col;
@@ -441,22 +441,22 @@ public class Utilities extends x10.core.Ref implements x10.serialization.X10Java
     public static double interpolate$O(final double fac, final double min, final double max) {
         
         //#line 63 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final double t$7150 = ((1.0) - (((double)(fac))));
+        final double t$7237 = ((1.0) - (((double)(fac))));
         
         //#line 63 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final double t$7151 = ((t$7150) * (((double)(min))));
+        final double t$7238 = ((t$7237) * (((double)(min))));
         
         //#line 63 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final double t$7152 = ((fac) * (((double)(max))));
+        final double t$7239 = ((fac) * (((double)(max))));
         
         //#line 63 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final double t$7153 = ((t$7151) + (((double)(t$7152))));
+        final double t$7240 = ((t$7238) + (((double)(t$7239))));
         
         //#line 63 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        final double t$7154 = ((t$7153) / (((double)(2.0))));
+        final double t$7241 = ((t$7240) / (((double)(2.0))));
         
         //#line 63 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/raytracer/Utilities.x10"
-        return t$7154;
+        return t$7241;
     }
     
     

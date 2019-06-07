@@ -19,6 +19,7 @@ public class Ray extends x10.core.Ref implements x10.serialization.X10JavaSerial
         if (x10.runtime.impl.java.Runtime.TRACE_SER) { x10.runtime.impl.java.Runtime.printTraceMessage("X10JavaSerializable: $_deserialize_body() of " + Ray.class + " calling"); } 
         $_obj.dir = $deserializer.readObject();
         $_obj.origin = $deserializer.readObject();
+        $_obj.recursionLevel = $deserializer.readInt();
         return $_obj;
     }
     
@@ -31,6 +32,7 @@ public class Ray extends x10.core.Ref implements x10.serialization.X10JavaSerial
     public void $_serialize(x10.serialization.X10JavaSerializer $serializer) throws java.io.IOException {
         $serializer.write(this.dir);
         $serializer.write(this.origin);
+        $serializer.write(this.recursionLevel);
         
     }
     
@@ -48,8 +50,11 @@ public class Ray extends x10.core.Ref implements x10.serialization.X10JavaSerial
     //#line 5 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Ray.x10"
     public primitives.Vector dir;
     
+    //#line 6 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Ray.x10"
+    public int recursionLevel;
     
-    //#line 7 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Ray.x10"
+    
+    //#line 8 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Ray.x10"
     // creation method for java code (1-phase java constructor)
     public Ray(final primitives.Vector origin, final primitives.Vector dir) {
         this((java.lang.System[]) null);
@@ -60,21 +65,69 @@ public class Ray extends x10.core.Ref implements x10.serialization.X10JavaSerial
     final public primitives.Ray primitives$Ray$$init$S(final primitives.Vector origin, final primitives.Vector dir) {
          {
             
-            //#line 7 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Ray.x10"
+            //#line 8 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Ray.x10"
             
             
             //#line 3 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Ray.x10"
             this.__fieldInitializers_primitives_Ray();
             
-            //#line 8 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Ray.x10"
+            //#line 9 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Ray.x10"
             this.origin = ((primitives.Vector)(origin));
             
-            //#line 9 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Ray.x10"
+            //#line 10 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Ray.x10"
             this.dir = ((primitives.Vector)(dir));
+            
+            //#line 11 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Ray.x10"
+            this.recursionLevel = 0;
         }
         return this;
     }
     
+    
+    
+    //#line 14 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Ray.x10"
+    // creation method for java code (1-phase java constructor)
+    public Ray(final primitives.Vector origin, final primitives.Vector dir, final int rec) {
+        this((java.lang.System[]) null);
+        primitives$Ray$$init$S(origin, dir, rec);
+    }
+    
+    // constructor for non-virtual call
+    final public primitives.Ray primitives$Ray$$init$S(final primitives.Vector origin, final primitives.Vector dir, final int rec) {
+         {
+            
+            //#line 14 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Ray.x10"
+            
+            
+            //#line 3 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Ray.x10"
+            this.__fieldInitializers_primitives_Ray();
+            
+            //#line 15 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Ray.x10"
+            this.origin = ((primitives.Vector)(origin));
+            
+            //#line 16 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Ray.x10"
+            this.dir = ((primitives.Vector)(dir));
+            
+            //#line 17 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Ray.x10"
+            this.recursionLevel = rec;
+        }
+        return this;
+    }
+    
+    
+    
+    //#line 20 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Ray.x10"
+    public int recurse$O() {
+        
+        //#line 21 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Ray.x10"
+        final int t$859707 = this.recursionLevel;
+        
+        //#line 21 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Ray.x10"
+        final int t$859708 = ((t$859707) + (((int)(1))));
+        
+        //#line 21 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Ray.x10"
+        return t$859708;
+    }
     
     
     //#line 3 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Ray.x10"
@@ -93,6 +146,9 @@ public class Ray extends x10.core.Ref implements x10.serialization.X10JavaSerial
         
         //#line 3 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Ray.x10"
         this.dir = null;
+        
+        //#line 3 "/Users/lucaturk/eclipse-workspace/x10-raytracer/src/primitives/Ray.x10"
+        this.recursionLevel = 0;
     }
 }
 

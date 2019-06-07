@@ -6,6 +6,9 @@ import datastructures.*;
 import shaders.*;
 
 public class Raytracer {
+	public static val MAX_RECURSE : Int = 16n; 
+	public static val AMBIENT_LIGHT : Double = 0.1;
+	
 	var width : Long = 0;
 	var height : Long = 0;
 	public var iBuffer : MinBuffer = new MinBuffer();
